@@ -1,0 +1,72 @@
+.lux-marquee-container {
+  position: relative;
+  width: 100%;
+}
+.lux-marquee {
+  background-color: var(--gray);
+}
+.lux-marquee-slide {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.lux-marquee-slide::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: linear-gradient(to top left, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6));
+  z-index: 2;
+}
+.lux-marquee-slide-content {
+  max-width: 900px;
+  padding: 30px;
+  text-align: center;
+  z-index: 3;
+}
+.lux-marquee-slide-title h1 {
+  color: var(--white);
+}
+.lux-marquee-slide-subtitle {
+  color: var(--white);
+  margin-bottom: 15px;
+}
+.lux-marquee-slide-description {
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+
+.lux-marquee .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+}
+.lux-marquee .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--border-color) !important;
+  border-radius: 15px;
+  margin: 2px;
+}
+.lux-marquee .owl-dots .owl-dot.active {
+  border: 2px solid var(--gold) !important;
+  background-color: var(--gold);
+}
+
+@media only screen and (max-width: 1000px) {
+  .lux-marquee-slide {
+    height: 650px;
+  }
+}

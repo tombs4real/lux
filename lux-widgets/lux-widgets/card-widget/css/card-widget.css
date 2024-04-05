@@ -1,0 +1,184 @@
+#lux-card-widget-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 30px auto;
+  gap: 15px;
+}
+
+/* .siteorigin-panels-stretch #lux-card-widget-container {
+  margin-left: 15px;
+} */
+
+#lux-card-widget-container .lux-card-widget-card {
+  flex: 1 1 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(84,117,145,0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(84,117,145,0.1);
+  box-shadow: 0px 10px 20px 0px rgba(84,117,145,0.1);
+  -webkit-transition: all,.3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: var(--base-radius);
+}
+
+@media only screen and (max-width: 1140px) {
+  #lux-card-widget-container.lux-card-widget-container-4col .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-container-5col .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-container-6col .lux-card-widget-card {
+    flex: 1 1 calc(33.333% - 15px) !important;
+    max-width: calc(33.333%) !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #lux-card-widget-container.lux-card-widget-container-4col .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-container-5col .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-container-6col .lux-card-widget-card {
+    flex: 1 1 calc(50% - 15px) !important;
+    max-width: calc(50%) !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lux-card-widget-container .lux-card-widget-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    margin: 0px 0px 15px 0px !important;
+  }
+}
+
+#lux-card-widget-container.lux-card-widget-container-2col .lux-card-widget-card {
+  flex: 1 1 calc(50% - 15px);
+  max-width: calc(50%);
+}
+#lux-card-widget-container.lux-card-widget-container-3col .lux-card-widget-card {
+  flex: 1 1 calc(33.333% - 15px);
+  max-width: calc(33.333%);
+}
+#lux-card-widget-container.lux-card-widget-container-4col .lux-card-widget-card {
+  flex: 1 1 calc(25% - 15px);
+  max-width: calc(25%);
+}
+#lux-card-widget-container.lux-card-widget-container-5col .lux-card-widget-card {
+  flex: 1 1 calc(20% - 15px);
+  max-width: calc(20%);
+}
+#lux-card-widget-container.lux-card-widget-container-6col .lux-card-widget-card {
+  flex: 1 1 calc(16.666% - 15px);
+  max-width: calc(16.666%);
+}
+
+#lux-card-widget-container .lux-card-widget-card:hover {
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(84,117,145,0.2);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(84,117,145,0.2);
+  box-shadow: 0px 20px 30px 0px rgba(84,117,145,0.2);
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-img {
+  height: 200px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-img-icon {
+  height: auto;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-body {
+  padding: 30px;
+}
+
+/* ALIGNMENT */
+#lux-card-widget-container .lux-card-widget-card.left-align {
+  text-align: left;
+}
+
+#lux-card-widget-container .lux-card-widget-card.center-align {
+  text-align: center;
+}
+
+#lux-card-widget-container .lux-card-widget-card.right-align {
+  text-align: right;
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-title-indigo, #lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-title-tea {
+  font-size: var(--h5);
+  font-family: var(--heading-font);
+  font-weight: 800;
+  line-height: var(--base-line-height);
+  color: var(--indigo);
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-title-indigo {
+  color: var(--indigo);
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-title-tea {
+  color: var(--tea);
+}
+
+#lux-card-widget-container .lux-card-widget-card .lux-card-widget-card-copy {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+
+/* HORIZONTAL LAYOUTS */
+#lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* IMG ON LEFT */
+#lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card .lux-card-widget-card-img {
+  flex: 1 0 33.333%;
+  order: 1;
+  height: 100%;
+}
+#lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card .lux-card-widget-card-body {
+  order: 2;
+}
+
+/* IMG ON RIGHT */
+#lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card .lux-card-widget-card-img {
+  flex: 1 0 33.333%;
+  order: 2;
+  height: 100%;
+}
+#lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card .lux-card-widget-card-body {
+  order: 1;
+}
+
+@media only screen and (max-width: 960px) {
+  #lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card, #lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card {
+    display: block;
+  }
+  #lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card .lux-card-widget-card-img, #lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card .lux-card-widget-card-img {
+    flex: auto;
+    height: 200px;
+    width: 100%;
+    order: 1;
+  }
+  #lux-card-widget-container.lux-card-widget-layout-horz-img-left .lux-card-widget-card .lux-card-widget-card-body, #lux-card-widget-container.lux-card-widget-layout-horz-img-right .lux-card-widget-card .lux-card-widget-card-body {
+    flex: auto;
+    order: 2;
+  }
+}
